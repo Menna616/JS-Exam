@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+/* Loading Screen */
+#loading{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+/* SideBar */
+.sideBar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 100%;
+    background-color: red;
+}
+.sideBar ul{
+    list-style-type: none;
+}
+.fixed-box{
+    background-color: #0D0D0D;
+}
+.sideBar .for-menu img{
+    width: 50px;
+}
+.for-menu{
+    background-color: #fff;
+}
+.social-icons{
+    margin-left: 30px;
+}
+.sideBar ul,.sideBar i {
+    cursor: pointer;
+}
+
+/* Home Section */
+.layer{
+    background-color: #f9f6f6ca;
+    left: 0%;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s all;
+}
+.meal-img:hover .layer,.component:hover .layer{
+    top: 0;
+}
+
+/* Search Section */
+#Search .form-control{
+    background-color: black;
+}
+#Search input::placeholder{
+    color:#6C757D !important;
+}
+#Search .form-control:focus{
+    color: white;
+}
+
+/* Categories Section */
+#Categories h3{
+    font-weight: 500;
+}
+#Categories p,.ingredient .ingredient-layer p{
+    font-size: 17px;
+}
+
+.ingredient .ingredient-layer{
+    height: 100px;
+}
+
